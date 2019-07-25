@@ -1,7 +1,26 @@
+# numbers
+# the number types are automatically upcast in the following order
+Int -> Long -> Float -> complex
+# test the type of numbers in python 
+isinstance(2, int)
+# the complex type
+x = 3 + 4j 
+x.real => 3
+x.imag => 4.0
+
+# Binany  二进制
+0b101
+# Octal 八进制
+0o123
+# Hex  十六进制  
+0x123
+
+
+
 
 # tuple
 # Create an empty tuple
-empty_tuple = ()
+empty_tuple = () 
 
 # Create a tuple without using a branket
 py_tuple = 2, 3, 4
@@ -27,8 +46,8 @@ print(nested_tuple)
 ## Feature2: multiplied
 sample_tuple = ('python 1')
 sample_tuple = sample_tuple*3
+#####? sample_tuple 会变成字符串类型的
 print(sample_tuple)
-
 
 
 # Dictionary
@@ -55,7 +74,7 @@ print('fruit', hobby_dict['leomon'])
 hobby_dict['literature'] = 'poem'
 hobby_dict.update({'literature': 'poem'})
 
-# Update a Element
+# Update an Element
 hobby_dict['lemon'] = 'acid'
 hobby_dict.update(lemon='acid')
 
