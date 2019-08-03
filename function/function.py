@@ -77,11 +77,26 @@ def daysInYear(is_leap_year=False):
 daysInYear()
 daysInYear(True)
 
-
+# arguments
 def inventory(category, * items):
   print("%s [items=%d]:" % (category, len(items)), items)
   for item in items:
     print("-", item)
   return
 inventory('Electronics', 'tv', 'lcd', 'ac', 'refrigerator', 'heater')
-inventory('Books', 'python', 'java', 'c', 'c++')
+
+# Function attributes
+def testFunc():
+  print('I am just a test function')
+
+testFunc.attr1 = 'Hello'
+testFunc.attr2 = 'World'
+testFunc ()
+
+print(dir(testFunc))
+
+# Python functions as objects
+def testFunc(a, b): print('testFunc is called')
+fn = testFunc
+fn(22, 'bb')
+
