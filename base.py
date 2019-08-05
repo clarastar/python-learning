@@ -1,12 +1,12 @@
 # numbers
 # the number types are automatically upcast in the following order
-Int -> Long -> Float -> complex
+# Int -> Long -> Float -> complex
 # test the type of numbers in python 
 isinstance(2, int)
 # the complex type
 x = 3 + 4j 
-x.real => 3
-x.imag => 4.0
+x.real 
+x.imag 
 
 # Binany  二进制  begins with 0b
 0b101
@@ -244,3 +244,17 @@ a+ = 4
 a- = 4
 a* = 4
 
+# for loop clause
+for iter in range(0, 3):
+  print("iter: % d" %(iter))
+
+# else-else clause with python for loop
+birds = ['Belle', 'Coco', 'Juniper', 'Lilly', 'Snow']
+ignoreElse = False
+
+for theBird in birds:
+    print(theBird )
+    if ignoreElse and theBird is 'Snow':
+        break
+else:
+    print("No birds left.")
